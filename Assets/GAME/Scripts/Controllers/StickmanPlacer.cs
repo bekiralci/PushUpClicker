@@ -10,7 +10,6 @@ public class StickmanPlacer : MonoBehaviour
     public int maxStickmanCount;
     public List<PathCreator> paths;
 
-    [ContextMenu("TEST")]
     public void SetTransform(Transform stickmanBase, int level)
     {
 
@@ -19,7 +18,7 @@ public class StickmanPlacer : MonoBehaviour
 
         float iter;
 
-        iter = (EventManager.E_StickmansManager.Invoke().currentCars[level - 1].Count + 1) * point;
+        iter = (EventManager.E_StickmansManager.Invoke().stickmansOnGame[level - 1].Count + 1) * point;
 
         stickmanBase.position = paths[level].path.GetPointAtDistance(iter);
 
