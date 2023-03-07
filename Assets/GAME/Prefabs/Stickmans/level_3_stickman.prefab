@@ -40,6 +40,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 5710667283961641621}
     m_Modifications:
     - target: {fileID: 514680394641241402, guid: 7835133425bd47141b8a9ea41df5a674, type: 3}
+      propertyPath: level
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 514680394641241402, guid: 7835133425bd47141b8a9ea41df5a674, type: 3}
       propertyPath: _animationSpeed
       value: 3
       objectReference: {fileID: 0}
