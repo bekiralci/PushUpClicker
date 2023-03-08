@@ -9,6 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5592861759917649163}
+  - component: {fileID: 2071010932365056980}
   m_Layer: 0
   m_Name: level_6_stickman
   m_TagString: Untagged
@@ -24,7 +25,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5592861759917649162}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.571428, y: 2, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -32,6 +33,22 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2071010932365056980
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5592861759917649162}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 504e569fa2cc06345a558cbb76d7489c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  obj_Main: {fileID: 5592861759917649163}
+  animator: {fileID: 5756530893319470750}
+  _animationSpeed: 6
+  level: 6
 --- !u!1001 &5592861760082434251
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -39,13 +56,25 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5592861759917649163}
     m_Modifications:
+    - target: {fileID: 179748686724323477, guid: 7835133425bd47141b8a9ea41df5a674, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: ae6ba51a2199e3d4bad580445b78b4cd, type: 2}
     - target: {fileID: 514680394641241402, guid: 7835133425bd47141b8a9ea41df5a674, type: 3}
       propertyPath: level
       value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 514680394641241402, guid: 7835133425bd47141b8a9ea41df5a674, type: 3}
+      propertyPath: obj_Main
+      value: 
+      objectReference: {fileID: 5592861759917649163}
+    - target: {fileID: 514680394641241402, guid: 7835133425bd47141b8a9ea41df5a674, type: 3}
       propertyPath: _animationSpeed
       value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 5921653570021049375, guid: 7835133425bd47141b8a9ea41df5a674, type: 3}
+      propertyPath: _income
+      value: 600
       objectReference: {fileID: 0}
     - target: {fileID: 8448365739661204197, guid: 7835133425bd47141b8a9ea41df5a674, type: 3}
       propertyPath: m_RootOrder
@@ -95,10 +124,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: Stickman
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 514680394641241402, guid: 7835133425bd47141b8a9ea41df5a674, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 7835133425bd47141b8a9ea41df5a674, type: 3}
 --- !u!4 &4081186791519044142 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8448365739661204197, guid: 7835133425bd47141b8a9ea41df5a674, type: 3}
+  m_PrefabInstance: {fileID: 5592861760082434251}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &5756530893319470750 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 179748686728406613, guid: 7835133425bd47141b8a9ea41df5a674, type: 3}
   m_PrefabInstance: {fileID: 5592861760082434251}
   m_PrefabAsset: {fileID: 0}

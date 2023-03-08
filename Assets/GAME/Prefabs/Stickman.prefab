@@ -281,8 +281,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 504e569fa2cc06345a558cbb76d7489c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  obj_Main: {fileID: 8448365739661204197}
   animator: {fileID: 179748686728406613}
   _animationSpeed: 0
+  level: 0
+  _income: 0
 --- !u!4 &179748686738016665 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8592876449704432112, guid: 6b5d591dbb72ac04a80d42bbb710cb7a, type: 3}
