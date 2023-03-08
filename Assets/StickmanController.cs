@@ -15,23 +15,7 @@ public class StickmanController : MonoBehaviour
 
     private void Start()
     {
-        animator = GetComponent<Animator>();
         animator.speed = _animationSpeed;
-    }
-
-    private void OnEnable()
-    {
-        if (gameObject.activeInHierarchy)
-        {
-            EventManager.E_StickmansManager.Invoke().AddObj(this);
-        }
-    }
-    private void OnDisable()
-    {
-        if (!gameObject.activeInHierarchy)
-        {
-            EventManager.E_StickmansManager.Invoke().RemoveObj(this);
-        }
     }
 
 }
