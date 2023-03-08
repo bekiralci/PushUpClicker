@@ -10,7 +10,7 @@ public class UIItemAddStickman : ButtonBase
 
     private void AddStickman()
     {
-        if (CheckAmount())
+        if (CheckAmount() && EventManager.E_StickmansManager.Invoke().stickmansOnGame[0].Count != stickmanPlacer.maxStickmanCount)
         {
             StickmanController obj = EventManager.E_ObjectPool?.Invoke().GetPooledObject(0);
             stickmanPlacer.SetTransform(obj.obj_Main, obj.level);
