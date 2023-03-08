@@ -50,15 +50,16 @@ public class ObjectPool : MonoBehaviour
     {
         if (pools[charLevel].pooledObjects.Count == 0)
         {
+            print(0);
             return null;
         }
 
         StickmanController obj = pools[charLevel].pooledObjects[0];
 
         pools[charLevel].pooledObjects.Remove(obj);
-        obj.gameObject.SetActive(true);
-
         EventManager.E_StickmansManager.Invoke().AddObj(obj);
+
+        obj.gameObject.SetActive(true);
 
         return obj;
     }

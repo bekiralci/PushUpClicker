@@ -18,9 +18,9 @@ public class StickmanPlacer : MonoBehaviour
 
         float iter;
 
-        iter = (EventManager.E_StickmansManager.Invoke().stickmansOnGame[level - 1].Count + 1) * point;
+        iter = (EventManager.E_StickmansManager.Invoke().stickmansOnGame[level - 1].Count) * point;
 
-        stickmanBase.position = paths[level].path.GetPointAtDistance(iter);
+        stickmanBase.position = paths[level - 1].path.GetPointAtDistance(iter);
 
     }
 

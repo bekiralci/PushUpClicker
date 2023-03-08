@@ -32,8 +32,6 @@ public abstract class ButtonBase : MonoBehaviour
     public void UpdateCost()
     {
 
-        UpdateAmount(upgradeCost);
-
         upgradeCost = (int)(Mathf.Pow(upgradeLevel, factor)) * startCost;
 
         upgradeLevel++;
